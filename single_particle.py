@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-mdMax = 10000
+mdMax = 100000
 # about the problem
 m = 3.0
 k = 2.0
@@ -20,8 +20,7 @@ while i < mdMax:
     a = f/m
     v += a*dt
     x += v*dt
-    t += i*dt
+    t = i*dt
     i += 1
 
-#    print t, x
-print 'done'
+    print t, x

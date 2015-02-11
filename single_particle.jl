@@ -1,7 +1,7 @@
 #!/usr/bin/env julia
 
 # about the problem
-mdMax = 10000
+mdMax = 100000
 m = 3.0
 k = 2.0
 dt = 0.001
@@ -19,7 +19,7 @@ for i = 1:mdMax
     a = f/m
     v += a*dt
     x += v*dt
-    t += i*dt
+    t = i*dt
 
     println("$t $x")
 end
